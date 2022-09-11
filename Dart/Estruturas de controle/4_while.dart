@@ -9,5 +9,14 @@ void main(List<String> args) {
     entrada_usuario = stdin.readLineSync().toString();
   }
 
+  print("Primeiro while finalizado!");
+
+  entrada_usuario = '';
+
+  do {
+    stdout.write('Digite algo ou sair: ');
+    entrada_usuario = stdin.readLineSync().toString();
+  } while (entrada_usuario != 'sair');
+
   print('Finished!');
 }
