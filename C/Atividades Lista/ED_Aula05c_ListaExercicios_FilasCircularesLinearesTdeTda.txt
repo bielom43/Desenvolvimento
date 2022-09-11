@@ -1,0 +1,22 @@
+MARÇAL, J.
+
+----------------
+EXERCÍCIO
+----------------
+INSTRUÇÕES
+  - O exercício abaixo visa a aplicação de vários conceitos de estrutura de dados vistos até o momento tais como: Estruturas lineares; Tipos de dados estruturados; Tipos de dados abstratos e Filas Circulares. Implementar o exercício abaixo utilizando métodos TDA.
+
+DESCRIÇÃO
+  – Criar uma fila circular de veículos, cada veículo deverá conter as seguintes informações: Placa, Modelo, Preço.
+ 
+  – Crie um menu para manipular a fila de veículos com as seguintes opções:
+	1. Enfileirar
+	2. Desenfileirar
+	3. Imprimir
+	4. Maior valor
+	5. Soma todos valores
+	9. Sair
+
+  - Extra: Apesar de não ser obrigatório, demonstre que está com disposição para aprender, adicione ao exercício os itens: 
+  a) Uma opção que possibilite realizar uma busca pela placa de um veículo (esta implementação visa comparação textual em C, pesquise sobre 'strcmp'). 
+  b) Adicione uma regra que não permite incluir um segundo veículo com a mesma placa caso já exista um veículo com a mesma placa já cadastrado. 

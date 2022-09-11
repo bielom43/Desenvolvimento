@@ -1,0 +1,16 @@
+ESTRUTURA DE DADOS
+
+DESAFIO
+- Desenvolver Fila Dinâmica contendo 02 ponteiros, sendo o de Início que será responsável pela remoção dos elementos, e o de Final que será responsável pelo controle de inserção de novos elementos, e todos os métodos deverão considerar da melhor forma ambos ponteiros. 
+
+A fila deverá controlar a entrada de torcedores em um jogo de futebol, deverá ser armazenada as seguintes informações de cada torncedor: Codigo ingresso; Idade; Valor; Número acadeira.
+
+
+FILA TORCEDORES
+1. Adicionar torcedor fila (enfileirar)
+2. Permitir entrada torcedor (desenfileirar)
+3. Contar número de torcedores aguardando entrada (contar elementos fila)
+4. Exibir informações torcedores fila
+5. Exibir torcedor mais novo e mais velho da fila
+6. Somar valor ingressos torcedores fila
+

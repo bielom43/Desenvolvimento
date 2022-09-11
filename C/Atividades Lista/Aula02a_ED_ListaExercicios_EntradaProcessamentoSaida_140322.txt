@@ -1,0 +1,57 @@
+ESTRUTUDA DE DADOS
+MARÇAL
+
+LISTA EXERCÍCIOS 1
+- Entrada, Processamento e Saída.
+- Comandos condicionais.
+
+ED-L1-EX01 [MAIOR, MENOR, IGUAIS]
+Desenvolva um algoritmo que solicite do usuário 2 valores numéricos quaisquer, a aplicação deverá exibir se os valores são iguais, se o primeiro é maior que o segundo, ou se o segundo é maior que o terceiro. 
+
+ED-L1-EX02 [ÁREA RETANGULO]
+Desenvolva um algoritmo capaz de informar qual é a área de um retângulo, o usuário deverá informar os valores de base e altura. 
+
+ED-L1-EX03 [ORDENAR 3 VALORES]
+Desenvolva um algoritmo que solicite o usuário 3 valores inteiros quaisquer, este algoritmo deverá exibir os valores ordenados ascendente indiferentemente da ordem que o usuário informar os valores, esta ordenação deverá ocorrer somente se não existir nenhum valor repetido, caso exista informar ao usuário que valores repetidos não são permitidos.
+
+ED-L1-EX04 [MÉDIA ESCOLAR]
+Desenvolva um algoritmo que permita calcular a média final de um aluno, o cálculo será mf = p1 + p2 + tr, sendo que p1 terá peso 40%, p2 peso 40% e tr peso de 20%, o algoritmo deverá receber as informações de p1, p2, tr e nc (nota de corte) e ao final exibir se o aluno foi aprovado (mf > nc) ou reprovado (mf < nc). 
+
+ED-L1-EX05 [ELEIÇÕES]
+Crie um programa que solicite do usuário o número de eleitores que votaram brancos, nulos e votos válidos, calcule o percentual que representa cada um dos valores informados e exiba o resultado (percentuais).
+
+ED-L1-EX06 [PREÇO VENDA VEÍCULO]
+Crie um algoritmo que irá CALCULAR O PREÇO FINAL DE VENDA um veículo, este algoritmo deverá adicionar os impostos e também margem de lucro sobre o valor de fábrica do veículo, o algoritmo deverá solicitar o ANO de fabricação do veículo, o preço de fábrica e então acrescentar os impostos de acordo com as regras abaixo e também o percentual de lucro, o preço final deverá estar acrescido dos itens mencionados. No final do processamento, a aplicação deverá exibir o valor original, o valor referente a cada imposto e também o valor de lucro, e por fim, deverá exibir o preço final que correspondo ao preço original mais os itens calculados. Observação: Todos os valores deverão ser calculados sobre o preço original do veículo.
+
+IPI 
+veículos ano <= 2000 = 10% 
+veículos ano > 2000 e ano <= 2010 = 11%
+veículos ano > 2011 = 13%
+
+ICMS
+veículos ano <= 2000 = 5 %
+veículos ano >  2000 = 7%
+
+LUCRO
+veículos ano <= 2000 = 25% 
+veículos ano  > 2000 = 20%
+
+ 
+ED-L1-EX07 [FEIRA]
+Crie um algoritmo que irá calcular o valor total que uma senhora irá pagar por seus produtos em uma feira baseado no valor dos itens abaixo, considere que ela irá comprar uma quantidade X de cada item ao final deverá apresentar o resultado.
+
+Pera até 5 unidades: R$ 1,50, acima de 5 R$ 1,20
+Alface até 2 unidades: R$ 2,00, acima de 2 R$ 1,50
+Laranjas até 6 unidades: R$ 0,50, acima de 6 R$ 0,40
+
+
+ED-L1-EX08 [COMBUSTÍVEL]
+Crie um algoritmo que irá calcular o valor total a ser pago na compra de combustível levando em consideração que o preço do álcool comprado acima de 20 litros tem desconto de 3% e acima 40 litros desconto de 5% por litro e que a gasolina comprando acima de 15 litros terá 3% de desconto e acima de 35 litros 6% de desconto.
+
+
+ED-L1-EX09 [IMC]
+Crie uma aplicação que calcula o IMC, a aplicação deverá solicitar o Peso e a Altura, e apresentar o resultado da operação.
+
+
+ED-L1-EX10 [Juros mensalidade]
+Crie uma aplicação que deverá calcular o novo valor da menslidade, a aplicação deverá solicitar do usuário o valor da mensalidade e também o dia em que ele deseja realizar o pagamento. Baseado nestas informações, caso o dia de pagamento esteja entre os dias 1~5 não deverá ocorrer nenhum ajuste de valor, se o dia de pagamento estiver entre 6~10 deverá ser calculado um acrescimo de 5% e se o dia estiver entre 11~20 deverá calcular 8%, e por fim, se o dia estiver entre 21~31 deverá ser calculado 10% de juros. A aplicação deverá apresentar no final do processamento, o valor original, o valor correspondente ao juros e também o valor final acrescido dos juros.

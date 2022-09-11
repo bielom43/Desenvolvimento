@@ -1,0 +1,69 @@
+LISTA EXERCÍCIOS FILAS DINÂMICAS
+
+
+DESCRIÇÃO
+  A presente lista de exercícios foi desenvolvida para a prátida dos conceitos dos conceitos de Filas com uso de Listas Ligadas também conhecidas como Filas Dinâmicas, os exercíos aqui propostos reforçam ainda os conceitos de Tipos de dados estruturados (TDA), Tipos de dados abstratos (TDA), Contadores, Acumuladores, Comandos condicionais, Comandos de Repetição, etc.
+
+  Todas as operações de cada exercício deverá ser desenvolvida no entanto para controle interno das aplicações vários outros métodos podem ser desenvolvidos.
+
+
+EXERCÍCIOS
+
+:: EDFLLL01 ::..
+Com base nas informações abaixo, desenvolva uma aplicação que faz uso de Filas, o exercício preve o controle de uma Fila de veículos.
+
+TDE
+Veiculo {
+  + Codigo
+  + Placa
+  + Modelo
+  + Marca
+  + Preco
+}
+
+OPERAÇÕES
+ + Enfileirar (Veiculo)
+ + Desenfileirar()
+ + Relatório() -- Deve imprimir as informações de todos os veículos da fila, do início para o final.
+ + Início ()   -- Deve exibir os dados do veículo do início da fila.
+ + Final()     -- Deve exibir os dados do veículo do final da fila.
+ + Total()     -- A quantidade de veículos da fila.
+ + Localizar (Placa) -- Caso a linguagem seja C pesquisar como realizar comparação textual (Char).
+ + Mais Caro ()      -- Deve exibir os dados do veículo mais caro.
+
+
+
+:: EDFLLL02 ::..
+Com base nas informações abaixo, desenvolva uma aplicação que faz uso de Filas, o exercício preve o controle de atendimento de alunos em uma secretaria de escola.
+
+TDE
+Aluno {
+  + NumeroAtendimento;
+  + RA;
+  + Nome;
+  + Curso;
+  + ValorMensalidade;
+}
+
+
+OPERAÇÕES (TDA)
+  + Adicionar(Aluno) *
+  + Atender () **
+  + Relatorio () 
+  + MaiorMensalidade () 
+  + Localizar (RA)
+  + MediaMensalidades;
+  + NumeroAlunosDoCurso(Curso) ***
+  + ResumoAlunosPorCurso() ****
+  + Atender (X) *****
+
+NOTAS
+* Adiciona um novo aluno na fila, o campo NumeroAtendimento deverá ser gerado automaticamente (pesquisar como gerar números randômicos), não deverá ser permitido inserção de dois alunos com mesmo RA (antes de inserir deve-se pesquisar se já existe na fila um outro aluno com o mesmo RA).
+** Corresponde ao remover da fila, o aluno saí da Fila quanto é atendido, deverá exibir o NumeroAtendimento antes da remoção, a exibição equivale a impressão do número que está sendo chamado em um painel.
+*** Contar o número de alunos presentes na fila de um determinado curso, que será fornecido pelo usuário.
+**** Deverá apresentar apenas o nome dos cursos e a quantidade de alunos de cada curso. 
+***** O usuário deverá informar a quantidade X de alunos que serão atendidos (retirados) de uma única vez, é importante lembrar que se existir apenas 1 aluno na fila e for solicitado para atender 3, não deve apresentar erro.
+
+
+
+
