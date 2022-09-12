@@ -11,3 +11,22 @@ String juntar(dynamic a, b) {
   print(a.toString() + b.toString());
   return a.toString() + b.toString();
 }
+
+// void main(List<String> args) {
+//   int n = 1;
+//   int x = 0;
+//   int i;
+
+//   while (n < 10) {
+//     if (n % 2 != 0) {
+//       for (i = 3; i * i <= n; i += 2) {
+//         if (n % i == 0) break;
+//       }
+//       if (i < n) {
+//         x++;
+//       }
+//     }
+//     n++;
+//   }
+//   print(x);
+// }
