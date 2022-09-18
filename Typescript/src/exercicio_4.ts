@@ -5,4 +5,20 @@ chuva a polegada. Sabendo-se que uma polegada eqüivale a 25.4 milímetros, escr
 programa que leia a quantidade de chuva em milímetros e imprima esta quantidade em
 polegadas. */
 
+class converting_milimeters{
+    public milimeter!: number;
 
+    constructor(milimeter: number){
+        this.milimeter = milimeter;
+    }
+
+    calculating(v: converting_milimeters){
+        return v.milimeter / 25.4;
+    }
+
+}
+
+var converted_milimeter = new converting_milimeters(80);
+
+console.log(converted_milimeter);
+console.log(converted_milimeter.calculating(converted_milimeter).toFixed(2));
