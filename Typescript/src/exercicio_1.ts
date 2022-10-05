@@ -45,4 +45,3 @@ console.log(calc.calc_div(calc))
 console.log(calc.calc_mult(calc))
 console.log(calc.calc_soma(calc))
 console.log(calc.calc_sub(calc))
-

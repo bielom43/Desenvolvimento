@@ -13,6 +13,8 @@ class loja_generic {
         return (c.preco_produto * 0.17) + c.preco_produto;
     }
 }
-let total_imposto = new loja_generic(700);
+let total_imposto = new loja_generic(100);
+let total_sem_imposto;
 console.log("O valor total a ser pago com impost e: ", total_imposto.calculo_imposto(total_imposto));
-console.log("Valor do imposto");
+total_sem_imposto = total_imposto.calculo_imposto(total_imposto).toString;
+console.log("Valor do imposto: ", total_sem_imposto);
