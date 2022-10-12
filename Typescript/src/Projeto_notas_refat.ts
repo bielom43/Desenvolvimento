@@ -118,11 +118,7 @@ console.log(lucas.getNotaFinal())
 console.log(lucas.isAprovado())
 
 
-const livia = new Estudantes("2105752",
-                            "Livia",
-                            new Provas(7, 30),
-                            new Provas(5, 30),
-                            new Provas(10, 40))
+const livia = new Estudantes("2105752","Livia",new Provas(7, 30), new Provas(5, 30), new Provas(10, 40))
 console.log(livia)
 console.log(livia.getNotaFinal())
 console.log(livia.isAprovado())
