@@ -1,25 +1,60 @@
-class Date {
-  late int day;
-  late int month;
-  late int year;
+class Data {
+  int? dia;
+  int? mes;
+  int? ano;
 
-  String give_date() {
-    return 'Data: $day/$month/$year';
+  // Data(int dia, int mes, int ano) {
+  //   this.dia = dia;
+  //   this.mes = mes;
+  //   this.ano = ano;
+  // }
+
+  Data([this.dia = 1, this.mes = 1, this.ano = 1970]);
+
+  // Named Constructors
+  Data.com({this.dia = 1, this.mes = 1, this.ano = 1970});
+  Data.ultimoDiaDoAno(this.ano) {
+    dia = 31;
+    mes = 12;
+  }
+
+  String obterFormatada() {
+    return "$dia/$mes/$ano";
+  }
+
+  String toString() {
+    return obterFormatada();
   }
 }
 
-void main(List<String> args) {
-  var birth_day = new Date();
+main() {
+  var dataAniversario = new Data(3, 10, 2020);
+  // dataAniversario.dia = 3;
+  // dataAniversario.mes = 10;
+  // dataAniversario.ano = 2020;
 
-  birth_day.day = 19;
-  birth_day.month = 12;
-  birth_day.year = 1982;
+  Data dataCompra = Data(1, 1, 1970);
+  // dataCompra.dia = 23;
+  dataCompra.mes = 12;
+  dataCompra.ano = 2021;
 
-  Date purchase_day = Date();
-  purchase_day.day = 12;
-  purchase_day.month = 10;
-  purchase_day.year = 2022;
+  String d1 = dataAniversario.obterFormatada();
 
-  print(birth_day.give_date());
-  print(purchase_day.give_date());
+  print("A data do aniversário é $d1");
+  print("A data da compra é ${dataCompra.obterFormatada()}");
+
+  print(dataCompra);
+  print(dataCompra.toString());
+
+  print(new Data());
+  print(Data(31));
+  print(Data(31, 12));
+  print(Data(31, 12, 2021));
+
+  print(Data.com(ano: 2022));
+
+  var dataFinal = Data.com(dia: 12, mes: 7, ano: 2024);
+  print("O Mickey será público em $dataFinal");
+
+  print(Data.ultimoDiaDoAno(2023));
 }
