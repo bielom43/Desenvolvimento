@@ -1,34 +1,49 @@
-import 'dart:math';
-
 class Car {
   final int maxSpeed;
-  int actualSpeed = 0;
+  int _actualSpeed = 0;
 
   Car([this.maxSpeed = 100]);
 
-  int SpeedUp() {
-    if (actualSpeed + 5 >= maxSpeed) {
-      actualSpeed = maxSpeed;
-    } else {
-      actualSpeed += 5;
+  int get actualSpeed {
+    return this._actualSpeed;
+  } // < - Get metod for private actualSpeed information
+
+  void set actualSpeed(int newSpeed) {
+    // if (newSpeed <= maxSpeed) {
+    //   this._actualSpeed = newSpeed;
+    // } else {
+    //   print("Invalid value!!\n Cause maximum speed is $maxSpeed .");
+    // }
+    bool vlid = (_actualSpeed - newSpeed).abs() <= 5;
+
+    if (vlid && newSpeed > 0) {
+      this._actualSpeed = newSpeed;
     }
-    return actualSpeed;
+  }
+
+  int SpeedUp() {
+    if (_actualSpeed + 5 >= maxSpeed) {
+      _actualSpeed = maxSpeed;
+    } else {
+      _actualSpeed += 5;
+    }
+    return _actualSpeed;
   }
 
   int brake() {
-    if (actualSpeed - 5 <= 0) {
-      actualSpeed = 0;
+    if (_actualSpeed - 5 <= 0) {
+      _actualSpeed = 0;
     } else {
-      actualSpeed -= 5;
+      _actualSpeed -= 5;
     }
-    return actualSpeed;
+    return _actualSpeed;
   }
 
   bool onLimit() {
-    return actualSpeed == maxSpeed;
+    return _actualSpeed == maxSpeed;
   }
 
   bool isStopped() {
-    return actualSpeed == 0;
+    return _actualSpeed == 0;
   }
 }
