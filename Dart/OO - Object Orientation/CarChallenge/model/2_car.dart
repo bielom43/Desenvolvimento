@@ -9,11 +9,12 @@ class Car {
   } // < - Get metod for private actualSpeed information
 
   void set actualSpeed(int newSpeed) {
-    // if (newSpeed <= maxSpeed) {
-    //   this._actualSpeed = newSpeed;
-    // } else {
-    //   print("Invalid value!!\n Cause maximum speed is $maxSpeed .");
-    // }
+    if (actualSpeed <= maxSpeed) {
+      this._actualSpeed = actualSpeed;
+    } else {
+      print("Invalid value!!\n Cause maximum speed is $maxSpeed .");
+    }
+
     bool vlid = (_actualSpeed - newSpeed).abs() <= 5;
 
     if (vlid && newSpeed > 0) {
