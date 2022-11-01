@@ -19,7 +19,7 @@ class Prova {
         return this._peso;
     }
     setPeso(_peso) {
-        if (_peso < 1 || _peso > 10) {
+        if (_peso < 0.2 || _peso > 1) {
             throw new Error('Peso invalido, digite um peso de 1 a 10');
         }
         else {
@@ -78,7 +78,11 @@ class Estudante {
         }
     }
 }
-let prova1 = new Prova(7, 0.3);
-let prova2 = new Prova(8, 0.2);
-let prova3 = new Prova(2, 0.5);
-console.log(prova1.getNota());
+let prova1 = new Prova(10, 0.3);
+let prova2 = new Prova(10, 0.2);
+let prova3 = new Prova(10, 0.5);
+var pr = prova1.getValor(prova1);
+var pr1 = prova2.getValor(prova2);
+var pr2 = prova3.getValor(prova3);
+let aprovacao = new Estudante("Cirio Gomes", 2314123, pr, pr1, pr2);
+console.log(aprovacao.isAproved(aprovacao));
