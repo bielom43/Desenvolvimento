@@ -37,5 +37,8 @@ void main(List<String> args) {
     ]
   );
 
-  print("Total value for this sale is: ${sale.totalPrice}");
+  print("Total value for this sale is: R\$jhgjgsfdfgfgffdffdsfsdf${sale.totalPrice}"); 
+  print("Name for the first product is: ${sale.itens[0].product.name}");
+  print("Client cpf is: ${sale.client.cpf}");
+  
 }
