@@ -9,7 +9,7 @@ class Sale {
 
   double get totalPrice {
     return itens
-        .map((item) => item.price * item.quantity)
+        .map((item) => item.price! * item.quantity)
         .reduce((total, actual) => total + actual);
   }
 }

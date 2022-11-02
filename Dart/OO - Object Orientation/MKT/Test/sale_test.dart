@@ -8,12 +8,12 @@ void main(List<String> args) {
     client: Client(name: 'Julinho Ricardito', cpf: '321.321.432-19'),
     itens: <SaleItem>[
       SaleItem(
-          quantity: 25,
+          quantity: 30,
           product: Product(
             code: 1, 
             name: 'Water Dust', 
-            price: 9.45, 
-            discount: 0.2
+            price: 6.0, 
+            discount: 0.5
             ),
       ),
       SaleItem(
@@ -21,19 +21,21 @@ void main(List<String> args) {
           product: Product(
               code: 23,
               name: 'Hiroshima Nagazaki',
-              price: 1000,
-              discount: 0.8
+              price: 20.00,
+              discount: 0.25
               )
       ),
       SaleItem(
-          quantity: 12,
+          quantity: 100,
           product: Product(
               code: 22,
               name: 'Fish',
-              price: 25.32,
-              discount: 0.1,
+              price: 2.00,
+              discount: 0.5,
           )
       )
     ]
   );
+
+  print("Total value for this sale is: ${sale.totalPrice}");
 }
