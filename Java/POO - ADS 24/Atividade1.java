@@ -1,6 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
-public class triangle_area {
+public class Atividade1 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);//definindo separador de decimal para US ou '.'
